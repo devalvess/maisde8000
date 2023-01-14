@@ -10,10 +10,10 @@ class EnergyController extends Controller
     {
         $energy = $id;
 
-        if($energy > 8000) 
+        if($energy > "8000") 
         { $energy = "Mais de 8000!";}
         else 
-        { $energy = "Inseto!";}
+        {$energy = "Inseto!";}
 
         return view('/dbz', compact('energy'));
             
